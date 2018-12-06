@@ -14,6 +14,11 @@
 		500B82CF21B926E500A6CC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 500B82CD21B926E500A6CC2B /* LaunchScreen.storyboard */; };
 		500B82DA21B926E500A6CC2B /* FoodTaskerMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82D921B926E500A6CC2B /* FoodTaskerMobileTests.swift */; };
 		500B82E521B926E500A6CC2B /* FoodTaskerMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82E421B926E500A6CC2B /* FoodTaskerMobileUITests.swift */; };
+		500B82F521B92F7300A6CC2B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 500B82F321B92F7300A6CC2B /* SWRevealViewController.m */; };
+		500B82F821B9408300A6CC2B /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82F721B9408300A6CC2B /* RestaurantViewController.swift */; };
+		500B82FA21B9452800A6CC2B /* CustomerMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82F921B9452800A6CC2B /* CustomerMenuTableViewController.swift */; };
+		500B82FC21B96B0400A6CC2B /* MealListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82FB21B96B0400A6CC2B /* MealListTableViewController.swift */; };
+		500B82FE21B975C300A6CC2B /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82FD21B975C300A6CC2B /* MealDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,13 @@
 		500B82E021B926E500A6CC2B /* FoodTaskerMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTaskerMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		500B82E421B926E500A6CC2B /* FoodTaskerMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTaskerMobileUITests.swift; sourceTree = "<group>"; };
 		500B82E621B926E500A6CC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		500B82F221B92F7200A6CC2B /* FoodTaskerMobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodTaskerMobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		500B82F321B92F7300A6CC2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		500B82F421B92F7300A6CC2B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		500B82F721B9408300A6CC2B /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		500B82F921B9452800A6CC2B /* CustomerMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerMenuTableViewController.swift; sourceTree = "<group>"; };
+		500B82FB21B96B0400A6CC2B /* MealListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListTableViewController.swift; sourceTree = "<group>"; };
+		500B82FD21B975C300A6CC2B /* MealDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,17 @@
 		500B82C321B926E300A6CC2B /* FoodTaskerMobile */ = {
 			isa = PBXGroup;
 			children = (
+				500B82F621B92F9100A6CC2B /* Lib */,
 				500B82C421B926E300A6CC2B /* AppDelegate.swift */,
 				500B82C621B926E300A6CC2B /* ViewController.swift */,
 				500B82C821B926E300A6CC2B /* Main.storyboard */,
 				500B82CB21B926E500A6CC2B /* Assets.xcassets */,
 				500B82CD21B926E500A6CC2B /* LaunchScreen.storyboard */,
 				500B82D021B926E500A6CC2B /* Info.plist */,
+				500B82F721B9408300A6CC2B /* RestaurantViewController.swift */,
+				500B82F921B9452800A6CC2B /* CustomerMenuTableViewController.swift */,
+				500B82FB21B96B0400A6CC2B /* MealListTableViewController.swift */,
+				500B82FD21B975C300A6CC2B /* MealDetailsViewController.swift */,
 			);
 			path = FoodTaskerMobile;
 			sourceTree = "<group>";
@@ -123,6 +140,16 @@
 				500B82E621B926E500A6CC2B /* Info.plist */,
 			);
 			path = FoodTaskerMobileUITests;
+			sourceTree = "<group>";
+		};
+		500B82F621B92F9100A6CC2B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				500B82F421B92F7300A6CC2B /* SWRevealViewController.h */,
+				500B82F321B92F7300A6CC2B /* SWRevealViewController.m */,
+				500B82F221B92F7200A6CC2B /* FoodTaskerMobile-Bridging-Header.h */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +220,7 @@
 				TargetAttributes = {
 					500B82C021B926E300A6CC2B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					500B82D421B926E500A6CC2B = {
 						CreatedOnToolsVersion = 10.1;
@@ -257,7 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				500B82C721B926E300A6CC2B /* ViewController.swift in Sources */,
+				500B82FE21B975C300A6CC2B /* MealDetailsViewController.swift in Sources */,
+				500B82F821B9408300A6CC2B /* RestaurantViewController.swift in Sources */,
+				500B82FC21B96B0400A6CC2B /* MealListTableViewController.swift in Sources */,
 				500B82C521B926E300A6CC2B /* AppDelegate.swift in Sources */,
+				500B82FA21B9452800A6CC2B /* CustomerMenuTableViewController.swift in Sources */,
+				500B82F521B92F7300A6CC2B /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VJ72TG9L7C;
 				INFOPLIST_FILE = FoodTaskerMobile/Info.plist;
@@ -441,6 +475,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.FoodTaskerMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTaskerMobile/Lib/FoodTaskerMobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VJ72TG9L7C;
 				INFOPLIST_FILE = FoodTaskerMobile/Info.plist;
@@ -459,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = app.FoodTaskerMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodTaskerMobile/Lib/FoodTaskerMobile-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
