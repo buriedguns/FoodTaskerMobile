@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.1'
 
 target 'FoodTaskerMobile' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,15 +7,5 @@ target 'FoodTaskerMobile' do
 
   # Pods for FoodTaskerMobile
   pod 'Stripe'
-
-  target 'FoodTaskerMobileTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'FoodTaskerMobileUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 
 end

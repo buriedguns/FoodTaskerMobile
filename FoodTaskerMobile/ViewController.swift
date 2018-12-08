@@ -8,12 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+extension UIApplication {
+    
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
+    
+}
 
+class ViewController: UIViewController{
+    
+    /*override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }*/
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //self.setNeedsStatusBarAppearanceUpdate()
+        //UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 0.19, green: 0.18, blue: 0.31, alpha: 1.0)
+
     }
+
 
 
 }
