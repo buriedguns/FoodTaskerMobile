@@ -45,7 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D9F3CED5D0184EFD11B589F /* Pods-FoodTaskerMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobileTests/Pods-FoodTaskerMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		17048BCF64F27DD4646A5ACB /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		3DC4503F480BF25E4B1A80EB /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		4C2ED7882AECC0B2DEA2EADB /* Pods-FoodTaskerMobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobileUITests/Pods-FoodTaskerMobileUITests.release.xcconfig"; sourceTree = "<group>"; };
 		500B82C121B926E300A6CC2B /* FoodTaskerMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTaskerMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		500B82C421B926E300A6CC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		500B82C621B926E300A6CC2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,12 +74,15 @@
 		5028D1A121B98D9100400A39 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		7F7A2B4B22546CB7A95E3052 /* Pods_FoodTaskerMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8008C101E0738A5886361BC0 /* Pods_FoodTaskerMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B316211699456125235EF7 /* Pods-FoodTaskerMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobileUITests/Pods-FoodTaskerMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D94BC478C7542BD36AE71D1 /* Pods-FoodTaskerMobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobileUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodTaskerMobileUITests/Pods-FoodTaskerMobileUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B105D75144AB78AB09B20C1F /* Pods-FoodTaskerMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobileTests.release.xcconfig"; path = "Target Support Files/Pods-FoodTaskerMobileTests/Pods-FoodTaskerMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA417A8D7EEA3E92B4907E22 /* Pods-FoodTaskerMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodTaskerMobileTests/Pods-FoodTaskerMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2D218E80611024B13E4224A /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
+		E71612F2824FCC067014181C /* Pods-FoodTaskerMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobileTests/Pods-FoodTaskerMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F289DFAD34CF979E43B098A4 /* Pods-FoodTaskerMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobileUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodTaskerMobileUITests/Pods-FoodTaskerMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F454311E4A856D2633692E55 /* Pods_FoodTaskerMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodTaskerMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBD8569B505FB8374937831 /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +204,12 @@
 				B105D75144AB78AB09B20C1F /* Pods-FoodTaskerMobileTests.release.xcconfig */,
 				F289DFAD34CF979E43B098A4 /* Pods-FoodTaskerMobileUITests.debug.xcconfig */,
 				9D94BC478C7542BD36AE71D1 /* Pods-FoodTaskerMobileUITests.release.xcconfig */,
+				3DC4503F480BF25E4B1A80EB /* Pods-FoodTaskerMobile.debug.xcconfig */,
+				FDBD8569B505FB8374937831 /* Pods-FoodTaskerMobile.release.xcconfig */,
+				E71612F2824FCC067014181C /* Pods-FoodTaskerMobileTests.debug.xcconfig */,
+				0D9F3CED5D0184EFD11B589F /* Pods-FoodTaskerMobileTests.release.xcconfig */,
+				95B316211699456125235EF7 /* Pods-FoodTaskerMobileUITests.debug.xcconfig */,
+				4C2ED7882AECC0B2DEA2EADB /* Pods-FoodTaskerMobileUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
