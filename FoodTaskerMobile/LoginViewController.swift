@@ -11,11 +11,23 @@ import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
+    
+    @IBOutlet weak var bLogin: UIButton!
+    @IBOutlet weak var bLogout: UIButton!
+    
     var fbLoginSuccess = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if FBSDKAccessToken.current() != nil {
+            bLogout.isHidden = false
+            FBManager.getFBUserData {
+                
+                self.bLogin.setTitle("Continue as \(String(describing: User.currentUser.email!))", for: .normal)
+                //self.bLogin.sizeToFit()
+            }
+        }
 
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -25,6 +37,14 @@ class LoginViewController: UIViewController {
     }
     
     
+    @IBAction func facebookLogout(_ sender: Any) {
+        
+        FBManager.shared.logOut()
+        User.currentUser.resetInfo()
+        bLogout.isHidden = true
+        bLogin.setTitle("Login with Facebook", for: .normal)
+    }
+    
     @IBAction func facebookLogin(_ sender: Any) {
         if (FBSDKAccessToken.current() != nil) {
             
@@ -33,8 +53,12 @@ class LoginViewController: UIViewController {
         }else{
             FBManager.shared.logIn(withReadPermissions: ["public_profile", "email"],
                                    from: self) { (result, error) in
-                                    if (error == nil) {
-                                        self.fbLoginSuccess = true
+                                    if error == nil {
+                                        
+                                        FBManager.getFBUserData(completionHandler: {
+                                            self.fbLoginSuccess = true
+                                            self.viewDidAppear(true)
+                                        })
                                     }
             }
         }

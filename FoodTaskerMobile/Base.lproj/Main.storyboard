@@ -56,6 +56,9 @@
                                         <state key="normal" title="Use a different account">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="facebookLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QF1-YR-giV"/>
+                                        </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-UW-WRB">
                                         <rect key="frame" x="15" y="504" width="345" height="29"/>
@@ -105,6 +108,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bLogin" destination="hro-OU-DSg" id="WNW-al-Sc4"/>
+                        <outlet property="bLogout" destination="kNy-ur-9gM" id="mQm-IP-zFw"/>
                         <segue destination="aiv-eh-uLW" kind="showDetail" identifier="CustomerView" id="05T-6D-xgJ"/>
                     </connections>
                 </viewController>
@@ -469,7 +474,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.14117647059999999" green="0.12941176469999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="etQ-dv-2YT"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="CustomerLogout" id="etQ-dv-2YT"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -480,6 +485,10 @@
                             <outlet property="delegate" destination="um2-yn-Xlw" id="iFh-hh-pqT"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="imgAvatar" destination="uAH-4E-zHg" id="UaN-TW-TDI"/>
+                        <outlet property="lbName" destination="Br5-HR-7MY" id="yih-3O-eGx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4W-n4-fcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,7 +497,6 @@
         <!--Reveal View Controller-->
         <scene sceneID="cGi-p8-d7m">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="icb-Mc-zpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="aiv-eh-uLW" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rMd-ym-qSB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -501,6 +509,7 @@
                         <segue destination="wu2-Wh-Uox" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="DAL-d6-Op9"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="icb-Mc-zpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137" y="815"/>
         </scene>
@@ -1065,6 +1074,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="dCj-Jt-q34"/>
         <segue reference="kTS-ZH-cv7"/>
-        <segue reference="DAL-d6-Op9"/>
+        <segue reference="8EW-k1-m8O"/>
     </inferredMetricsTieBreakers>
 </document>

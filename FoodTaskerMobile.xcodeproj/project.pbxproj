@@ -20,6 +20,7 @@
 		500B830021B9852E00A6CC2B /* TrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82FF21B9852E00A6CC2B /* TrayViewController.swift */; };
 		500B830321B9875B00A6CC2B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500B830221B9875B00A6CC2B /* MapKit.framework */; };
 		5028D1A221B98D9100400A39 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028D1A121B98D9100400A39 /* PaymentViewController.swift */; };
+		50B2479821C00F0800C43340 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2479721C00F0800C43340 /* User.swift */; };
 		50CEF23021BEC2C60098FB19 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CEF22F21BEC2C60098FB19 /* FBManager.swift */; };
 		50CEF23821BED7680098FB19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CEF23721BED7680098FB19 /* LoginViewController.swift */; };
 		932C329B376B1E39B205E6DD /* Pods_FoodTaskerMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84402A01A275065CE20C71E3 /* Pods_FoodTaskerMobile.framework */; };
@@ -63,6 +64,7 @@
 		500B82FF21B9852E00A6CC2B /* TrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewController.swift; sourceTree = "<group>"; };
 		500B830221B9875B00A6CC2B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5028D1A121B98D9100400A39 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		50B2479721C00F0800C43340 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		50CEF22E21BEC01B0098FB19 /* FoodTaskerMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodTaskerMobile.entitlements; sourceTree = "<group>"; };
 		50CEF22F21BEC2C60098FB19 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		50CEF23721BED7680098FB19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				EB3EB50121BC499C007DE95E /* OrderViewController.swift */,
 				50CEF22F21BEC2C60098FB19 /* FBManager.swift */,
 				50CEF23721BED7680098FB19 /* LoginViewController.swift */,
+				50B2479721C00F0800C43340 /* User.swift */,
 			);
 			path = FoodTaskerMobile;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B2479821C00F0800C43340 /* User.swift in Sources */,
 				50CEF23821BED7680098FB19 /* LoginViewController.swift in Sources */,
 				500B82C721B926E300A6CC2B /* ViewController.swift in Sources */,
 				50CEF23021BEC2C60098FB19 /* FBManager.swift in Sources */,
