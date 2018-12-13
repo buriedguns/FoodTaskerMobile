@@ -20,6 +20,7 @@
 		500B830321B9875B00A6CC2B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500B830221B9875B00A6CC2B /* MapKit.framework */; };
 		5028D1A221B98D9100400A39 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028D1A121B98D9100400A39 /* PaymentViewController.swift */; };
 		50B2479821C00F0800C43340 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2479721C00F0800C43340 /* User.swift */; };
+		50CCE05121C2776D00BDE0E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CCE05021C2776D00BDE0E5 /* Constants.swift */; };
 		50CEF23021BEC2C60098FB19 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CEF22F21BEC2C60098FB19 /* FBManager.swift */; };
 		50CEF23821BED7680098FB19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CEF23721BED7680098FB19 /* LoginViewController.swift */; };
 		50D6B02D21C16C0D009D946D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6B02C21C16C0D009D946D /* APIManager.swift */; };
@@ -64,6 +65,7 @@
 		500B830221B9875B00A6CC2B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5028D1A121B98D9100400A39 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		50B2479721C00F0800C43340 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		50CCE05021C2776D00BDE0E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50CEF22E21BEC01B0098FB19 /* FoodTaskerMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodTaskerMobile.entitlements; sourceTree = "<group>"; };
 		50CEF22F21BEC2C60098FB19 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		50CEF23721BED7680098FB19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			children = (
 				50CEF22F21BEC2C60098FB19 /* FBManager.swift */,
 				50D6B02C21C16C0D009D946D /* APIManager.swift */,
+				50CCE05021C2776D00BDE0E5 /* Constants.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				500B82C521B926E300A6CC2B /* AppDelegate.swift in Sources */,
 				500B82FA21B9452800A6CC2B /* CustomerMenuTableViewController.swift in Sources */,
 				50D6B02D21C16C0D009D946D /* APIManager.swift in Sources */,
+				50CCE05121C2776D00BDE0E5 /* Constants.swift in Sources */,
 				5028D1A221B98D9100400A39 /* PaymentViewController.swift in Sources */,
 				500B82F521B92F7300A6CC2B /* SWRevealViewController.m in Sources */,
 			);

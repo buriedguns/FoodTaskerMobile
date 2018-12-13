@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         
+        
         return (FBSDKApplicationDelegate.sharedInstance()?.application(app,
                                                                        open: url,
                                                                        sourceApplication:options [UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
