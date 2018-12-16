@@ -26,6 +26,8 @@
 		50D6B02D21C16C0D009D946D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6B02C21C16C0D009D946D /* APIManager.swift */; };
 		932C329B376B1E39B205E6DD /* Pods_FoodTaskerMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84402A01A275065CE20C71E3 /* Pods_FoodTaskerMobile.framework */; };
 		EB3EB50221BC499C007DE95E /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3EB50121BC499C007DE95E /* OrderViewController.swift */; };
+		EBA995C121C6A21F004DE069 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA995C021C6A21F004DE069 /* Restaurant.swift */; };
+		EBA995C621C6AE8A004DE069 /* RestaurantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA995C521C6AE8A004DE069 /* RestaurantViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		9CCF35DC258A6DCC1F80684F /* Pods-FoodTaskerMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.debug.xcconfig"; path = "Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		D3B34FB79CCC430A43211EAE /* Pods-FoodTaskerMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodTaskerMobile.release.xcconfig"; path = "Target Support Files/Pods-FoodTaskerMobile/Pods-FoodTaskerMobile.release.xcconfig"; sourceTree = "<group>"; };
 		EB3EB50121BC499C007DE95E /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		EBA995C021C6A21F004DE069 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		EBA995C521C6AE8A004DE069 /* RestaurantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestaurantViewCell.swift; path = FoodTaskerMobile/Model/RestaurantViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				50B2479721C00F0800C43340 /* User.swift */,
+				EBA995C021C6A21F004DE069 /* Restaurant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 		50D6B02921C16B50009D946D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EBA995C521C6AE8A004DE069 /* RestaurantViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -412,8 +418,10 @@
 				50CEF23021BEC2C60098FB19 /* FBManager.swift in Sources */,
 				EB3EB50221BC499C007DE95E /* OrderViewController.swift in Sources */,
 				500B82FE21B975C300A6CC2B /* MealDetailsViewController.swift in Sources */,
+				EBA995C121C6A21F004DE069 /* Restaurant.swift in Sources */,
 				500B830021B9852E00A6CC2B /* TrayViewController.swift in Sources */,
 				500B82F821B9408300A6CC2B /* RestaurantViewController.swift in Sources */,
+				EBA995C621C6AE8A004DE069 /* RestaurantViewCell.swift in Sources */,
 				500B82FC21B96B0400A6CC2B /* MealListTableViewController.swift in Sources */,
 				500B82C521B926E300A6CC2B /* AppDelegate.swift in Sources */,
 				500B82FA21B9452800A6CC2B /* CustomerMenuTableViewController.swift in Sources */,
