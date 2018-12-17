@@ -193,7 +193,7 @@
                                             <outlet property="imgRestaurantLogo" destination="KcJ-0t-PHF" id="J4c-Gu-Yub"/>
                                             <outlet property="lbRestaurantAddress" destination="W2n-gP-YPD" id="siX-Ov-uoN"/>
                                             <outlet property="lbRestaurantName" destination="wTK-OF-rjG" id="Mkf-uE-HUc"/>
-                                            <segue destination="uXT-ND-y64" kind="show" identifier="mealList" id="Vdr-8c-Npu"/>
+                                            <segue destination="uXT-ND-y64" kind="show" identifier="MealList" id="Vdr-8c-Npu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -247,7 +247,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" id="kpn-S2-ScW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" id="kpn-S2-ScW" customClass="MealViewCell" customModule="FoodTaskerMobile" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kpn-S2-ScW" id="6gr-M9-Cea">
@@ -268,13 +268,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grrass fed beef, American  cheese" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPu-JK-nrp">
-                                            <rect key="frame" x="26" y="46" width="228" height="41"/>
-                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                            <rect key="frame" x="26" y="46" width="228" height="38.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVx-Ug-y9z">
-                                            <rect key="frame" x="26" y="95" width="228" height="21"/>
+                                            <rect key="frame" x="26" y="92.5" width="228" height="21"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -296,7 +296,11 @@
                                 </tableViewCellContentView>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
-                                    <segue destination="J0N-d3-hq7" kind="show" identifier="mealDetails" id="aqr-aY-U4a"/>
+                                    <outlet property="imgMealImage" destination="Knq-ZR-bl6" id="z6i-hC-8py"/>
+                                    <outlet property="lbMealName" destination="dqk-oC-VPW" id="jVB-KY-Y3F"/>
+                                    <outlet property="lbMealPrice" destination="dVx-Ug-y9z" id="BkA-V6-3iD"/>
+                                    <outlet property="lbMealShortDescription" destination="PPu-JK-nrp" id="qxk-up-iAi"/>
+                                    <segue destination="J0N-d3-hq7" kind="show" identifier="MealDetails" id="aqr-aY-U4a"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -547,7 +551,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_image" translatesAutoresizingMaskIntoConstraints="NO" id="7mg-yp-sES">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_image" translatesAutoresizingMaskIntoConstraints="NO" id="7mg-yp-sES">
                                 <rect key="frame" x="0.0" y="64" width="375" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="8TS-D8-RGh"/>
@@ -587,6 +591,9 @@
                                         <state key="normal" title="Add to Tray">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addToTray:" destination="J0N-d3-hq7" eventType="touchUpInside" id="sEf-gd-qQR"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.00$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRk-tu-Ixv">
                                         <rect key="frame" x="287" y="55" width="76" height="21"/>
@@ -616,6 +623,9 @@
                                         <state key="normal" title="+">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addQty:" destination="J0N-d3-hq7" eventType="touchUpInside" id="5Hg-ZD-JBl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAm-8M-Yin">
                                         <rect key="frame" x="337" y="5" width="30" height="30"/>
@@ -627,6 +637,9 @@
                                         <state key="normal" title="-">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="removeQty:" destination="J0N-d3-hq7" eventType="touchUpInside" id="KRt-V4-gIT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -673,6 +686,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imgMeal" destination="7mg-yp-sES" id="JeT-TP-U7n"/>
+                        <outlet property="lbMealName" destination="TBI-i9-iyL" id="2Fy-Ck-tbH"/>
+                        <outlet property="lbMealShortDescription" destination="Xny-oY-mS0" id="M5g-6a-gfH"/>
+                        <outlet property="lbQty" destination="0Me-iE-2FO" id="4dg-A8-afP"/>
+                        <outlet property="lbTotal" destination="rRk-tu-Ixv" id="NqV-bS-gdU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYI-WY-eSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

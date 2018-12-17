@@ -18,6 +18,10 @@
 		500B82FE21B975C300A6CC2B /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82FD21B975C300A6CC2B /* MealDetailsViewController.swift */; };
 		500B830021B9852E00A6CC2B /* TrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B82FF21B9852E00A6CC2B /* TrayViewController.swift */; };
 		500B830321B9875B00A6CC2B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500B830221B9875B00A6CC2B /* MapKit.framework */; };
+		501B186D21C7D5E00053D92A /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B186C21C7D5E00053D92A /* Meal.swift */; };
+		501B186F21C7D7470053D92A /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B186E21C7D7470053D92A /* MealViewCell.swift */; };
+		501B187121C7EE7A0053D92A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B187021C7EE7A0053D92A /* Helpers.swift */; };
+		501B187321C7FDAF0053D92A /* Tray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B187221C7FDAF0053D92A /* Tray.swift */; };
 		5028D1A221B98D9100400A39 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028D1A121B98D9100400A39 /* PaymentViewController.swift */; };
 		50B2479821C00F0800C43340 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2479721C00F0800C43340 /* User.swift */; };
 		50CCE05121C2776D00BDE0E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CCE05021C2776D00BDE0E5 /* Constants.swift */; };
@@ -65,6 +69,10 @@
 		500B82FD21B975C300A6CC2B /* MealDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsViewController.swift; sourceTree = "<group>"; };
 		500B82FF21B9852E00A6CC2B /* TrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewController.swift; sourceTree = "<group>"; };
 		500B830221B9875B00A6CC2B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		501B186C21C7D5E00053D92A /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		501B186E21C7D7470053D92A /* MealViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
+		501B187021C7EE7A0053D92A /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		501B187221C7FDAF0053D92A /* Tray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tray.swift; sourceTree = "<group>"; };
 		5028D1A121B98D9100400A39 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		50B2479721C00F0800C43340 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		50CCE05021C2776D00BDE0E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -178,6 +186,8 @@
 			children = (
 				50B2479721C00F0800C43340 /* User.swift */,
 				EBA995C021C6A21F004DE069 /* Restaurant.swift */,
+				501B186C21C7D5E00053D92A /* Meal.swift */,
+				501B187221C7FDAF0053D92A /* Tray.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA995C521C6AE8A004DE069 /* RestaurantViewCell.swift */,
+				501B186E21C7D7470053D92A /* MealViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +222,7 @@
 				50CEF22F21BEC2C60098FB19 /* FBManager.swift */,
 				50D6B02C21C16C0D009D946D /* APIManager.swift */,
 				50CCE05021C2776D00BDE0E5 /* Constants.swift */,
+				501B187021C7EE7A0053D92A /* Helpers.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -414,8 +426,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B2479821C00F0800C43340 /* User.swift in Sources */,
+				501B187121C7EE7A0053D92A /* Helpers.swift in Sources */,
 				50CEF23821BED7680098FB19 /* LoginViewController.swift in Sources */,
 				50CEF23021BEC2C60098FB19 /* FBManager.swift in Sources */,
+				501B186D21C7D5E00053D92A /* Meal.swift in Sources */,
+				501B187321C7FDAF0053D92A /* Tray.swift in Sources */,
 				EB3EB50221BC499C007DE95E /* OrderViewController.swift in Sources */,
 				500B82FE21B975C300A6CC2B /* MealDetailsViewController.swift in Sources */,
 				EBA995C121C6A21F004DE069 /* Restaurant.swift in Sources */,
@@ -425,6 +440,7 @@
 				500B82FC21B96B0400A6CC2B /* MealListTableViewController.swift in Sources */,
 				500B82C521B926E300A6CC2B /* AppDelegate.swift in Sources */,
 				500B82FA21B9452800A6CC2B /* CustomerMenuTableViewController.swift in Sources */,
+				501B186F21C7D7470053D92A /* MealViewCell.swift in Sources */,
 				50D6B02D21C16C0D009D946D /* APIManager.swift in Sources */,
 				50CCE05121C2776D00BDE0E5 /* Constants.swift in Sources */,
 				5028D1A221B98D9100400A39 /* PaymentViewController.swift in Sources */,
