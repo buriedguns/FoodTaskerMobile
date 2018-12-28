@@ -138,7 +138,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantCell" id="hvG-Ae-gGJ" customClass="RestaurantViewCell" customModule="FoodTaskerMobile" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantCell" id="hvG-Ae-gGJ" customClass="RestaurantViewCell" customModule="FoodTaskerMobile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="226"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hvG-Ae-gGJ" id="FES-Yn-orG">
@@ -247,7 +247,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" id="kpn-S2-ScW" customClass="MealViewCell" customModule="FoodTaskerMobile" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="mealCell" id="kpn-S2-ScW" customClass="MealViewCell" customModule="FoodTaskerMobile" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kpn-S2-ScW" id="6gr-M9-Cea">
@@ -706,7 +706,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fod-qg-sbP">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fod-qg-sbP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -714,14 +714,14 @@
                                 </constraints>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="trayItemCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trayItemCell" id="cZe-pj-vLA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="trayItemCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trayItemCell" id="cZe-pj-vLA" customClass="TrayViewCell" customModule="FoodTaskerMobile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cZe-pj-vLA" id="vh9-63-YhR">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49c-20-IK4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49c-20-IK4">
                                                     <rect key="frame" x="20" y="11.5" width="21" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="HT9-S4-PuT"/>
@@ -757,6 +757,11 @@
                                                 <constraint firstItem="y8u-EC-9I3" firstAttribute="leading" secondItem="49c-20-IK4" secondAttribute="trailing" constant="15" id="hOY-aH-fKe"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbMealName" destination="y8u-EC-9I3" id="uYd-s1-JMy"/>
+                                            <outlet property="lbQty" destination="49c-20-IK4" id="6iF-o6-itx"/>
+                                            <outlet property="lbSubTotal" destination="dzN-f7-ijP" id="AQX-sq-dDv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -764,7 +769,7 @@
                                     <outlet property="delegate" destination="X0N-ob-WFU" id="F3U-gQ-ybg"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tD7-LL-G8V">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tD7-LL-G8V">
                                 <rect key="frame" x="0.0" y="264" width="375" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHs-Ci-bKL">
@@ -805,7 +810,7 @@
                                     <constraint firstAttribute="trailing" secondItem="cXO-8l-1T7" secondAttribute="trailing" constant="20" id="vh6-V9-eJ9"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-iR-ONl">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-iR-ONl">
                                 <rect key="frame" x="0.0" y="324" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjk-Qd-Zgm">
@@ -834,7 +839,7 @@
                                     <constraint firstAttribute="height" constant="60" id="Xm4-ua-zet"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUH-FC-784">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUH-FC-784">
                                 <rect key="frame" x="8" y="609" width="359" height="50"/>
                                 <color key="backgroundColor" red="0.30588235289999999" green="0.69019607839999997" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -844,11 +849,8 @@
                                 <state key="normal" title="Add Payment">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="4xn-wL-hvL" kind="show" id="bD8-B9-2QH"/>
-                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IE9-9f-PSY">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IE9-9f-PSY">
                                 <rect key="frame" x="5" y="389" width="365" height="213"/>
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-89-JRh">
@@ -892,7 +894,16 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="icon_menu_24dp" id="wXm-qs-Jov"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="bAddPayment" destination="vUH-FC-784" id="lQQ-nG-soK"/>
+                        <outlet property="lbTotal" destination="cXO-8l-1T7" id="HkM-bT-AYb"/>
+                        <outlet property="map" destination="WLk-89-JRh" id="vSB-5c-wsD"/>
                         <outlet property="menuBarButton" destination="wXm-qs-Jov" id="fwp-sX-1Ou"/>
+                        <outlet property="tbAddress" destination="cRK-xE-XXg" id="cnb-Vd-tC6"/>
+                        <outlet property="tbvMeals" destination="Fod-qg-sbP" id="KOV-U5-ta4"/>
+                        <outlet property="viewAddress" destination="bXQ-iR-ONl" id="368-TH-4xD"/>
+                        <outlet property="viewMap" destination="IE9-9f-PSY" id="9hA-ZD-YRw"/>
+                        <outlet property="viewTotal" destination="tD7-LL-G8V" id="bsV-oo-LDt"/>
+                        <segue destination="4xn-wL-hvL" kind="show" identifier="AddPayment" id="8c9-HF-saa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ai-0R-eF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
