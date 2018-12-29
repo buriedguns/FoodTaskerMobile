@@ -23,6 +23,7 @@
 		501B187121C7EE7A0053D92A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B187021C7EE7A0053D92A /* Helpers.swift */; };
 		501B187321C7FDAF0053D92A /* Tray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501B187221C7FDAF0053D92A /* Tray.swift */; };
 		5028D1A221B98D9100400A39 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5028D1A121B98D9100400A39 /* PaymentViewController.swift */; };
+		509AFB5C21D628D900D17561 /* TrayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509AFB5B21D628D900D17561 /* TrayViewCell.swift */; };
 		50B2479821C00F0800C43340 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2479721C00F0800C43340 /* User.swift */; };
 		50CCE05121C2776D00BDE0E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CCE05021C2776D00BDE0E5 /* Constants.swift */; };
 		50CEF23021BEC2C60098FB19 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CEF22F21BEC2C60098FB19 /* FBManager.swift */; };
@@ -74,6 +75,7 @@
 		501B187021C7EE7A0053D92A /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		501B187221C7FDAF0053D92A /* Tray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tray.swift; sourceTree = "<group>"; };
 		5028D1A121B98D9100400A39 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		509AFB5B21D628D900D17561 /* TrayViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayViewCell.swift; sourceTree = "<group>"; };
 		50B2479721C00F0800C43340 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		50CCE05021C2776D00BDE0E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50CEF22E21BEC01B0098FB19 /* FoodTaskerMobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodTaskerMobile.entitlements; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			children = (
 				EBA995C521C6AE8A004DE069 /* RestaurantViewCell.swift */,
 				501B186E21C7D7470053D92A /* MealViewCell.swift */,
+				509AFB5B21D628D900D17561 /* TrayViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B2479821C00F0800C43340 /* User.swift in Sources */,
+				509AFB5C21D628D900D17561 /* TrayViewCell.swift in Sources */,
 				501B187121C7EE7A0053D92A /* Helpers.swift in Sources */,
 				50CEF23821BED7680098FB19 /* LoginViewController.swift in Sources */,
 				50CEF23021BEC2C60098FB19 /* FBManager.swift in Sources */,
